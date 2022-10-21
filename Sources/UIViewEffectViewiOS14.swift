@@ -33,7 +33,10 @@ extension UIVisualEffectView {
     }
     
     func disableSaturation() {
+        // Disable stauration effect
         colorSaturateFilter?.requestedValues?["inputAmount"] = 1.0
+        // Disable unwanted tint
+        overlayView?.backgroundColor = .clear
     }
 }
 
